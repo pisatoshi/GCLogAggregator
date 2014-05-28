@@ -20,10 +20,10 @@ public class AggregateResult {
     public void add(LogEntry entry) {
         recordCount++;
 
-        if (entry.getType().equals("Full GC")) {
+        if (entry.getType().startsWith("Full GC")) {
             fullGcCount++;
         }
-        if (entry.getType().equals("GC")) {
+        if (entry.getType().startsWith("GC")) {
             gcCount++;
         }
 

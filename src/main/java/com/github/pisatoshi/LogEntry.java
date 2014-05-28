@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class LogEntry {
-    private static Pattern pattern = Pattern.compile("^([.0-9]+): \\[(.*) \\(.+\\)[ ]+([0-9]+)K->([0-9]+)K\\(([0-9]+)K\\), (.*) secs\\]$");
+    private static Pattern pattern = Pattern.compile("^([.0-9]+): \\[(.*)[ ]+([0-9]+)K->([0-9]+)K\\(([0-9]+)K\\), (.*) secs\\]$");
 
     private String source;
     private double timeStamp;
